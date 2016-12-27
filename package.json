@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "An object validation library",
   "main": "index.js",
+  "jsnext:main": "es6.js",
+  "types": "strike-validator.d.ts",
+  "typings": "strike-validator.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive"
   },
   "author": "Suhail Abood <suhail.abood@gmail.com> (suhailabood.me)",
   "license": "ISC",
@@ -12,9 +15,26 @@
     "type": "git",
     "url": "https://github.com/suhdev/strike-validator.git"
   },
+  "jspm": {
+    "registry": "npm",
+    "main": "es6.js",
+    "format": "es6",
+    "dependencies": {
+      "strike-util": "npm:strike-util@^1.0.5"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "eslint": "^3.12.2",
+    "jspm": "^0.16.48",
+    "mocha": "^3.2.0",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4"
   },
   "dependencies": {
     "strike-util": "^1.0.5"
