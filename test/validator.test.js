@@ -16,15 +16,15 @@ v.parseFields([{
     key:'age',
     type:'number',
     friendlyName:'Age',
-    rule:'required|between:18:30'
+    rule:'required|number|between:18:30'
 }]);
 
-describe('test',function(){
-    it('should validate',function(){
+describe('test strike-validator',function(){
+    it('should throw two errors',function(){
         expect(v.validate({
             firstName:'Suhail',
-            age:25
-        }).join('')).to.equal('');
-        // assert.equal(-1, [1,2,3].indexOf(4));
+            age:"60"
+        }).length).to.equal(2);
     });
+
 })

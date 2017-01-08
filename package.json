@@ -1,6 +1,6 @@
 {
   "name": "strike-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An object validation library",
   "main": "index.js",
   "jsnext:main": "es6.js",
@@ -37,6 +37,6 @@
     "typescript": "^2.1.4"
   },
   "dependencies": {
-    "strike-util": "^1.0.5"
+    "strike-util": "^1.0.6"
   }
 }
