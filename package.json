@@ -20,7 +20,7 @@
     "main": "es6.js",
     "format": "es6",
     "dependencies": {
-      "strike-util": "npm:strike-util@^1.0.5"
+      "strike-util": "npm:strike-util@^1.0.6"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
