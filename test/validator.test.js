@@ -20,7 +20,7 @@ v.parseFields([{
 }]);
 
 describe('test strike-validator',function(){
-    it('should throw two errors',function(){
+    it('should return two errors',function(){
         expect(v.validate({
             firstName:'Suhail',
             age:"60"
